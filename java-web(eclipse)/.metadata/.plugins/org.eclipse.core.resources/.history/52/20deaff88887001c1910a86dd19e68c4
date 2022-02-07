@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+<title>+Viagens - Feedbacks</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lista de feedbacks</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input name="pesquisa" class="form-control mr-sm-2" type="search" placeholder="Digíte o nome ou data" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+<main class="container text-center mt-3">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="display-4 my-3 border-bottom">Feedbacks</h1>
+			<div class="row">
+				<div class="col-2 mt-2">
+					<h1>Cadastro:</h1>
+				</div>
+			</div>
+			<form action="CreateAndFind" method="POST">
+                <div class="form-row mt-2 d-flex flex-column">
+                    <div class="form-group col-4">
+                        <label for="" class="float-left">Data:</label>
+                        <input name="data" type="date" class="form-control" id="">
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-12 col-lg-8">
+                        <label for="" class="float-left">Descrição:</label>
+                        <textarea name="descricao" maxlength="300" class="form-control" id="" rows="5" placeholder="Digíte..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-info my-4 float-left">Criar Feedback</button>
+                <button type="reset" class="btn btn-lg btn-info ml-3 my-4 float-left">Limpar Campos</button>
+            </form>
+		</div>
+	</div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+
+</body>
+</html>

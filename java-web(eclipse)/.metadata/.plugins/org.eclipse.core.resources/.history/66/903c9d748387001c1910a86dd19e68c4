@@ -1,0 +1,35 @@
+package dao;
+
+import model.Feedback;
+
+import java.sql.Connection;
+import java.util.List;
+
+import db.MySqlConnection;
+
+public class FeedbackDao implements CRUD{
+	
+	private static Connection connection = MySqlConnection.createConnection();
+	private static String sql;
+	
+	public static void create(Feedback feedback){
+		sql = "INSERT INTO feedbacks VALUES (NULL, ?, ?)";
+	}
+	
+	public static List<Feedback> find(String pesquisa){
+		return null;
+	}
+	
+	public static Feedback findByPk(int id_feedback){
+		return null;
+	}
+	
+	public static void update(Feedback feedback){
+		
+	}
+	
+	public static void delete(Feedback feedback){
+		
+	}
+
+}

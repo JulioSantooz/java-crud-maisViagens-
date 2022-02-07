@@ -1,0 +1,17 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="funcionarios" method="post">
+        Digite seu nome: <input type="text" name="txtNome" /> <br></br>
+        Digite sua matricula: <input type="text" name="txtMatricula" /> <br></br>
+        Digite o salario bruto : <input type="text" name="txtSalarioBruto" />
+        <br></br> <input type="submit" value="Enviar"> <br> <input
+            type="reset" name="Cancelar">
+    </form>
+
+</body>
+</html>

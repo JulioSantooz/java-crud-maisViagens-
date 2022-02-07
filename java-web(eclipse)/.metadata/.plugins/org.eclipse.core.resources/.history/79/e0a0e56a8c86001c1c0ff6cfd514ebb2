@@ -1,0 +1,5 @@
+package model.pessoal;
+
+public class Funcionario {
+
+}
